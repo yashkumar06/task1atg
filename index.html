@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATG WORLD</title>
+    <link rel = "icon" href ="./img/WebsiteIcon.png" type = "image/x-icon">
+   
+    <link rel="stylesheet" href="./css/style.css">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+   
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <script src="https://kit.fontawesome.com/3362ed1e66.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <div>
+        <div class="floating-btn">
+            <i class="bi bi-pencil"></i>
+        </div>
+        <div class="navbar-1">
+            <img src="./img/logo.png" alt="" class="logo" id="logo" >
+            <div class="input-div" id="searchBar">
+                <i class="bi bi-search" id="searchIcon"></i>
+                <input type="type" placeholder="Search for your favorite groups in ATG">                
+            </div>
+            <a class="create-account" onclick="loginDashboard()"><span >Create account.</span> It’s free!</a>
+            <i class="bi bi-search search-icon" onclick="search()"></i>
+        </div>
+        <div class="cover">
+            <div class="cover-layer">
+                <div class="cover-layer-top">
+                    <i class="bi bi-arrow-left-short left-arrow"></i>
+                    <button class="join-group" onclick="loginDashboard()">Join Group</button>
+                </div>
+                <div>
+                    <h1 class="cover-heading">Computer Engineering</h1>
+                    <p class="cover-para">142,765 Computer Engineers follow this</p>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="main-content">
+                <div class="navbar-2">
+                    <ul>
+                        <li><span class="nav2-type nav2-type-active">Posts(368)</span></li>  
+                        <li><span class="nav2-type nav2-type-active">All Posts(32)</span></li>  
+                        <li><span class="nav2-type">Article</span></li>
+                        <li><span class="nav2-type">Event</span></li>
+                        <li><span class="nav2-type">Education</span></li>
+                        <li><span class="nav2-type">Job</span></li>
+                    </ul>
+                    <div class="nav2-right">
+                        <div class="dropdown">
+                            <a class="dropdown-btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink1" data-bs-toggle="dropdown" aria-expanded="false">
+                                Filter: All 
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink1">
+                              <li><a class="dropdown-item" href="#">Article</a></li>
+                              <li><a class="dropdown-item" href="#">Event</a></li>
+                              <li><a class="dropdown-item" href="#">Education</a></li>
+                              <li><a class="dropdown-item" href="#">Job</a></li>
+                            </ul>
+                          </div>
+                          <div class="dropdown">
+                            <a class="dropdown-btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink2" data-bs-toggle="dropdown" aria-expanded="false">
+                                Write a Post 
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink2">
+                              <li><a class="dropdown-item" href="#">Article</a></li>
+                              <li><a class="dropdown-item" href="#">Event</a></li>
+                              <li><a class="dropdown-item" href="#">Education</a></li>
+                              <li><a class="dropdown-item" href="#">Job</a></li>
+                            </ul>
+                          </div>    
+                          <button class="nav2-btn"><i class="bi bi-person-plus-fill connect-icon"></i>Join Group</button>      
+                    </div>
+                </div>
+                <div class="main-content-box">
+                    <div class="main-content-left">
+                        <div class="card">
+                            <img src="./img/Rectangle2.png" class="card-image" />
+                            <div class="card-text">
+                                <h2 class="card-subhead">✍️ Article</h2>
+                                <div class="card-head-div">
+                                    <h1 class="card-head">What if famous brands had regular fonts? Meet RegulaBrands!</h1>
+                                    <div class="dots-div" style="background-color: #ffffff" onclick="pop1()">
+                                        <i class="fas fa-ellipsis-h card-dots"></i>
+                                        <ul id="dotsPop1" style="display:none">
+                                            <li>Edit</li>
+                                            <li>Report</li>
+                                            <li>Option 3</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <p class="card-para">I’ve worked in UX for the better part of a decade. F..</p>
+                                <div class="profile">
+                                    <div class="profile-details">
+                                        <img src="./img/profile1.png" class="profile-pic" />
+                                        <div>
+                                            <h1 class="profile-name">Sarthak Kamra</h1>
+                                            <p class="profile-views">1.4k views</p>
+                                        </div>
+                                    </div>
+                                    <div class="share-div">
+                                        <i class="fas fa-share-alt share-icon"></i>
+                                        <span class="share-text">Share</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                        <img src="./img/Rectangle3.png" class="card-image" />
+                            <div class="card-text">
+                                <h2 class="card-subhead">🔬️ Education</h2>
+                                <div class="card-head-div">
+                                    <h1 class="card-head">Tax Benefits for Investment under National Pension Scheme launched by Government</h1>
+                                    <div class="dots-div" style="background-color: #ffffff" onclick="pop2()">
+                                        <i class="fas fa-ellipsis-h card-dots"></i>
+                                        <ul id="dotsPop2" style="display:none">
+                                            <li>Edit</li>
+                                            <li>Report</li>
+                                            <li>Option 3</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <p class="card-para">I’ve worked in UX for the better part of a decade. F..</p>
+                                <div class="profile">
+                                    <div class="profile-details">
+                                        <img src="./img/profile2.png" class="profile-pic" />
+                                        <div>
+                                            <h1 class="profile-name">Sarah West</h1>
+                                            <p class="profile-views">4.8k views</p>
+                                        </div>
+                                    </div>
+                                    <div class="share-div">
+                                        <i class="fas fa-share-alt share-icon"></i>
+                                        <span class="share-text">Share</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="./img/Rectangle4.png" class="card-image" />
+                            <div class="card-text">
+                                <h2 class="card-subhead">🗓️ Meetup</h2>
+                                <div class="card-head-div">
+                                    <h1 class="card-head">Finance & Investment Elite Social Mixer @Lujiazui</h1>
+                                    <div class="dots-div" style="background-color: #ffffff" onclick="pop3()">
+                                        <i class="fas fa-ellipsis-h card-dots"></i>
+                                        <ul id="dotsPop3" style="display:none">
+                                            <li>Edit</li>
+                                            <li>Report</li>
+                                            <li>Option 3</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="location">
+                                    <div class="location-part">
+                                        <i class="bi bi-calendar-event location-icon"></i>
+                                          <span class="location-text">Fri, 12 Oct, 2018</span>
+                                    </div>
+                                    <div class="location-part">
+                                        <i class="bi bi-geo-alt location-icon"></i>
+                                        <span class="location-text">Ahmedabad, India</span>
+                                    </div>
+                                </div>
+                                <button class="card-btn btn-style-1">View Website</button>
+                                <div class="profile">
+                                    <div class="profile-details">
+                                        <img src="./img/profile3.png" class="profile-pic" />
+                                        <div>
+                                            <h1 class="profile-name">Ronal Jones</h1>
+                                            <p class="profile-views">800 views</p>
+                                        </div>
+                                    </div>
+                                    <div class="share-div">
+                                        <i class="fas fa-share-alt share-icon"></i>
+                                        <span class="share-text">Share</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-text">
+                                <h2 class="card-subhead">💼️ Job</h2>
+                                <div class="card-head-div">
+                                    <h1 class="card-head">Software Developer - II</h1>
+                                    <div class="dots-div" style="background-color: #ffffff" onclick="pop4()">
+                                        <i class="fas fa-ellipsis-h card-dots"></i>
+                                        <ul id="dotsPop4" style="display:none;">
+                                            <li>Edit</li>
+                                            <li>Report</li>
+                                            <li>Option 3</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="location">
+                                    <div class="location-part">
+                                        <i class="bi bi-bag location-icon"></i>
+                                          <span class="location-text">Innovaccer Analytic...</span>
+                                    </div>
+                                    <div class="location-part">
+                                        <i class="bi bi-geo-alt location-icon"></i>
+                                        <span class="location-text">Noida, India</span>
+                                    </div>
+                                </div>
+                                <button class="card-btn btn-style-2">Apply on Timesjobs</button>
+                                <div class="profile">
+                                    <div class="profile-details">
+                                        <img src="./img/profile4.png" class="profile-pic" />
+                                        <div>
+                                            <h1 class="profile-name">Joseph Gray</h1>
+                                            <p class="profile-views">1.7k views</p>
+                                        </div>
+                                    </div>
+                                    <div class="share-div">
+                                        <i class="fas fa-share-alt share-icon"></i>
+                                        <span class="share-text">Share</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main-content-right">
+                        <div class="mcr-location">
+                            <div class="location-part">
+                                <i class="bi bi-geo-alt location-icon"></i>
+                                <span class="location-text">Noida, India</span>
+                            </div>
+                            <i class="bi bi-pencil-fill"></i>
+                        </div>
+                        <div class="mcr-caution">
+                            <i class="bi bi-exclamation-circle caution-icon"></i>
+                            <span class="caution-text">Your location will help us serve better and extend a personalised experience.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+    <div class="login-background" id="loginDashboard" style="display: none">
+        <div class="login-card-with-close">
+        <i class="bi bi-x-circle-fill block-b-close-icon" onclick="loginDashboardClose()"></i>
+        <div class="login-card">
+            <div class="login-card-message">
+                <h1 class="login-card-message-text">Let's learn, share & inspire each other with our passion for computer engineering. Sign up now 🤘🏼</h1>
+            </div>
+            <div class="login-blocks" >
+                <div class="login-block-a">
+                    <div class="login-block-a-container">
+                        <div class="block-a-login-div">
+                            <h1 class="login-heading">Create Account</h1>
+                            <i class="bi bi-x-circle-fill block-a-close-icon" onclick="loginDashboardClose()"></i>
+                        </div>
+                        <div class="name-details" id="nameDetails" style="display: flex" >
+                            <div class="input-container w-50">
+                                <input type="text" placeholder="First Name" class="input-text">
+                            </div>
+                            <div class="input-container w-50">
+                                <input type="text" placeholder="Last Name" class="input-text">
+                            </div>
+                        </div>
+                        <div class="input-container">
+                            <input type="email" placeholder="Email" class="input-text">
+                        </div>
+                        <div class="input-container">
+                            <input type="password" placeholder="Password" class="input-text" id="passwordHidden">
+                            <i class="bi bi-eye password-eyeicon" id="passwordEyeicon" onclick="passwordHidden()"></i>
+                        </div>
+                        <div class="input-container" id="confirmPassword">
+                            <input type="password" placeholder="Confirm Password" class="input-text">
+                        </div>
+                        <div class="login-btn-div">
+                            <button class="login-btn" id="loginBtn">Create Account</button>
+                            <a class="block-a-login-change" id="blockALoginChange" onclick="switchLoginMode()">or, Sign In</a>
+                        </div>
+                        <div class="login-through-social-media-div">
+                            <i class="fab fa-facebook fb-icon"></i>
+                            <span class="login-through-social-media-text">Sign up with Facebook</span>
+                        </div>
+                        <div class="login-through-social-media-div">
+                            <img src="./img/google-icon.png" class="google-icon" />
+                            <span class="login-through-social-media-text">Sign up with Google</span>
+                        </div>
+                        <p class="block-a-login-agreement-text" id="blockALoginAgreementText" style="display: block">By signing up, you agree to our Terms & conditions, Privacy policy</p>
+                        <p class="forgot-password" style="display:none">Forgot Password?</p>        
+                    </div>
+                </div>
+                <div class="login-block-b">
+                    <div class="login-block-b-container">
+                        <h1 class="block-b-login-change-text" id="blockBLoginChangeText">Already have an account? <a onclick="switchLoginMode()" class="block-b-login-change">Sign In </a></h1>
+                        <img src="./img/login-image.png" class="login-image" />
+                        <p class="block-b-login-agreement-text" id="blockBLoginAgreementText">By signing up, you agree to our Terms & conditions, Privacy policy</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    
+    <script src="./js/app.js"></script>
+</body>
+</html>
